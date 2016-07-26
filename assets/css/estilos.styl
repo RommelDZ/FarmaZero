@@ -1,0 +1,269 @@
+size_background(x,y)
+	-webkit-background-size x,y
+	-moz-background-size x,y
+	background-size x,y
+sizing_box(x)
+	-webkit-box-sizing x
+	-moz-box-sizing x
+	box-sizing x
+
+@font-face
+	font-family 'Roboto'
+	src url('../fonts/Roboto/roboto-regular-webfont.eot')
+	src url('../fonts/Roboto/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto/roboto-regular-webfont.woff2') format('woff2'),
+		url('../fonts/Roboto/roboto-regular-webfont.woff') format('woff'),
+		url('../fonts/Roboto/roboto-regular-webfont.ttf') format('truetype'),
+		url('../fonts/Roboto/roboto-regular-webfont.svg#robotoregular') format('svg')
+	font-weight normal
+	font-style normal
+
+@font-face 
+	font-family 'titillium'
+	src url('../fonts/Titillium/titillium-regular-webfont.eot')
+	src url('../fonts/Titillium/titillium-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Titillium/titillium-regular-webfont.woff2') format('woff2'),
+		url('../fonts/Titillium/titillium-regular-webfont.woff') format('woff'),
+		url('../fonts/Titillium/titillium-regular-webfont.ttf') format('truetype'),
+		url('../fonts/Titillium/titillium-regular-webfont.svg#titilliumregular') format('svg');
+	font-weight normal
+	font-style normal
+
+body
+	background url(../img/fondo_bk.png)
+	font-size 14px
+	font-family 'Roboto', sans-serif
+	
+header
+	margin-top 3em
+	margin-bottom 2em
+	.dropdown-menu
+		background #2dc4d4				
+	.logo
+		left 20px
+		margin-top -48px
+		top 2px
+		z-index 2
+		a
+			img
+				-webkit-transition -webkit-transform 1s ease-out
+				-moz-transition -moz-transform 1s ease-out
+				transition transform 1s ease-out
+				&:hover
+					-webkit-transform rotate(360deg)
+					-moz-transform rotate(360deg)
+					transform rotate(360deg)
+	.navbar
+		background #2295a1
+	.navbar-default
+		.navbar-nav
+			li
+				a
+					color #fff
+					&:hover
+						color #333
+		.navbar-toggle
+			.icon-bar
+				background-color #eee	
+				color #333
+	.ubicacion, .usuario
+		color #959598
+		font-family 'titillium', sans-serif
+		font-size 1em
+		font-weight bold		
+	.ubicacion
+		float left
+		margin-left 170px
+		width 680px		
+
+footer
+	background #fff
+	box-shadow 0 2px 4px #CCC
+	padding 2em
+	p 
+		font-size 13px
+	.copyrigth
+		margin-top 1em
+		text-align center
+
+section
+	background #fff
+	box-shadow 0 2px 4px #CCC
+	margin-bottom 2em
+	a
+		color #2B908F
+	hr
+		margin 0
+	table 
+		.btn
+			margin-top 0
+	table.dataTable thead 
+		.sorting_asc
+			background-image url("../img/sort_asc.png")
+		.sorting_desc
+			background-image url("../img/sort_desc.png");
+		.sorting
+			background-image url("../img/sort_both.png")
+	table.dataTable.hover, table.dataTable.display, table.dataTable.order-column.hover 
+		tbody 
+			tr:hover, tr:hover > .sorting_1
+				background-color #2295A1
+				color #fff
+	.btn-new
+		.btn-primary, .btn-success, .btn-warning, .btn-default
+			margin-top 10px
+	.dataTables_wrapper
+		margin-top 1.5em
+		margin-bottom 1.5em
+	.frm-header
+		margin-bottom 10px
+	.frm-pharma
+		background #f5f5f5
+		border-radius 0.5em
+		box-shadow 1px 1px 10px #aaa
+		padding 1.5em
+		margin-bottom 2em
+		margin-top 2em
+		label
+			font-family 'titillium', sans-serif
+	.form-control, 
+	.dataTables_wrapper .dataTables_filter input, 
+	.dataTables_length select 
+		border 2px solid #ccc
+		border-radius 4px
+		-webkit-box-shadow inset 0 1px 1px rgba(0,0,0,0.075)
+		-moz-box-shadow inset 0 1px 1px rgba(0,0,0,0.075)
+		box-shadow inset 0 1px 1px rgba(0,0,0,0.075)
+		-webkit-transition border-color ease-in-out .15s,box-shadow ease-in-out .15s
+		transition border-color ease-in-out .15s,box-shadow ease-in-out .15s
+		&:focus
+			border-color #2295a1
+			color #414848
+			background #dfe9ec
+			outline 0
+			-webkit-box-shadow inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6)
+			-moz-box-shadow inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6)
+			-o-box-shadow inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6)
+			-ms-box-shadow inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6)
+			box-shadow inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6)
+	.lbl-pharma
+		color #c7c7c7
+		padding-top 1.5em
+		font-size 1.2em
+	.table
+		margin-top 1.5em
+	.opciones_fin_venta
+		margin-top 30px
+		margin-bottom 30px
+		text-align center
+		.t_left
+			text-align left
+		.borde_ticket
+			border 2px solid #000
+			padding-top 10px
+			#tblVentasTicket
+				width 100%
+				thead
+					tr
+						border-top 6px double #424242 
+						border-bottom 6px double #424242 
+						th
+							padding 6px		
+							text-align center
+				tbody
+					text-align center
+				tfoot
+					tr
+						th
+							text-align center						
+				.margenDouble
+					border-top 6px double #424242 
+	/*.btn 
+		background #2295a1
+		border-radius 3px
+		color #fff
+		padding 10px 30px
+		margin-top 10px
+		&:hover 
+			background #2dc4d4
+			border-radius 3px
+			color #fff
+	*/
+	.table-hover 
+		tbody 
+			tr:hover
+				background-color #2295A1
+				color #fff
+	.tblReporte
+		thead
+			th
+				padding 10px 18px
+				border-bottom 1px solid #111
+		tfoot
+			th
+				border-top 1px solid #111
+	.panel-success
+		.panel-heading	
+			color #fefefe;
+			background-color #2295A1
+			border-color #2295A1
+			font-weight bold
+			font-family 'titillium', sans-serif
+			label
+				float right
+
+.borde
+	width 100%
+	height 7px
+	border-left 20px solid #186b74
+	border-right 20px solid #33e0f2
+	sizing_box border-box
+	background-position 0 0, 0 100% 
+	background-repeat no-repeat
+	size_background 100% 20px
+	//background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYWNmZDUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhNGVkNSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYWNmZDUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhNGVkNSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+	background-image -webkit-linear-gradient(left, #186b74 0%, #33e0f2 100%), -webkit-linear-gradient(left, #186b74 0%, #33e0f2 100%)
+	background-image -moz-linear-gradient(left, #186b74 0%, #33e0f2 100%), -moz-linear-gradient(left, #186b74 0%, #33e0f2 100%)
+	background-image -o-linear-gradient(left, #186b74 0%, #33e0f2 100%), -o-linear-gradient(left, #186b74 0%, #33e0f2 100%)
+	background-image linear-gradient(to right, #186b74 0%, #33e0f2 100%), linear-gradient(to right, #186b74 0%, #33e0f2 100%)
+//para los mensajes de error de validacion de formularios
+.mensaje-error 
+	color #dd2222
+	font-size 12px
+	font-family titillium
+	font-weight bold
+	
+.mensaje-error_repeat
+	font-size 14px		
+//para el posicionamiento y ubicacion de los iconos glyphicon de boostrap en input type submit
+.icon-input-btn
+	display inline-block
+	position relative
+	input[type="submit"]
+		padding-left 2.3em
+	.glyphicon
+		display inline-block
+		position absolute
+		left 1em
+		top 40%
+
+@media (max-width: 767px)
+	header
+		margin-top 1em
+		.logo
+			margin-top -25px
+			position absolute
+			left 10px
+			top 2px
+			img
+				height 80px
+				width 80px
+		.navbar-default
+			.navbar-nav
+				.open
+					.dropdown-menu
+						li
+							a
+								color #eee
+		.ubicacion
+			margin-left 0

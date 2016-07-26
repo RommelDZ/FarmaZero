@@ -1,0 +1,292 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/roboto-regular-webfont.eot");
+  src: url("../fonts/Roboto/roboto-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/Roboto/roboto-regular-webfont.woff2") format('woff2'), url("../fonts/Roboto/roboto-regular-webfont.woff") format('woff'), url("../fonts/Roboto/roboto-regular-webfont.ttf") format('truetype'), url("../fonts/Roboto/roboto-regular-webfont.svg#robotoregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'titillium';
+  src: url("../fonts/Titillium/titillium-regular-webfont.eot");
+  src: url("../fonts/Titillium/titillium-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/Titillium/titillium-regular-webfont.woff2") format('woff2'), url("../fonts/Titillium/titillium-regular-webfont.woff") format('woff'), url("../fonts/Titillium/titillium-regular-webfont.ttf") format('truetype'), url("../fonts/Titillium/titillium-regular-webfont.svg#titilliumregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: url("../img/fondo_bk.png");
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+header .dropdown-menu {
+  background: #2dc4d4;
+}
+header .logo {
+  left: 20px;
+  margin-top: -48px;
+  top: 2px;
+  z-index: 2;
+}
+header .logo a img {
+  -webkit-transition: -webkit-transform 1s ease-out;
+  -moz-transition: -moz-transform 1s ease-out;
+  transition: transform 1s ease-out;
+}
+header .logo a img:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+header .navbar {
+  background: #2295a1;
+}
+header .navbar-default .navbar-nav li a {
+  color: #fff;
+}
+header .navbar-default .navbar-nav li a:hover {
+  color: #333;
+}
+header .navbar-default .navbar-toggle .icon-bar {
+  background-color: #eee;
+  color: #333;
+}
+header .ubicacion,
+header .usuario {
+  color: #959598;
+  font-family: 'titillium', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+header .ubicacion {
+  float: left;
+  margin-left: 170px;
+  width: 680px;
+}
+footer {
+  background: #fff;
+  box-shadow: 0 2px 4px #ccc;
+  padding: 2em;
+}
+footer p {
+  font-size: 13px;
+}
+footer .copyrigth {
+  margin-top: 1em;
+  text-align: center;
+}
+section {
+  background: #fff;
+  box-shadow: 0 2px 4px #ccc;
+  margin-bottom: 2em;
+/*.btn 
+		background #2295a1
+		border-radius 3px
+		color #fff
+		padding 10px 30px
+		margin-top 10px
+		&:hover 
+			background #2dc4d4
+			border-radius 3px
+			color #fff
+	*/
+}
+section a {
+  color: #2b908f;
+}
+section hr {
+  margin: 0;
+}
+section table .btn {
+  margin-top: 0;
+}
+section table.dataTable thead .sorting_asc {
+  background-image: url("../img/sort_asc.png");
+}
+section table.dataTable thead .sorting_desc {
+  background-image: url("../img/sort_desc.png");
+}
+section table.dataTable thead .sorting {
+  background-image: url("../img/sort_both.png");
+}
+section table.dataTable.hover tbody tr:hover,
+section table.dataTable.display tbody tr:hover,
+section table.dataTable.order-column.hover tbody tr:hover,
+section table.dataTable.hover tbody tr:hover > .sorting_1,
+section table.dataTable.display tbody tr:hover > .sorting_1,
+section table.dataTable.order-column.hover tbody tr:hover > .sorting_1 {
+  background-color: #2295a1;
+  color: #fff;
+}
+section .btn-new .btn-primary,
+section .btn-new .btn-success,
+section .btn-new .btn-warning,
+section .btn-new .btn-default {
+  margin-top: 10px;
+}
+section .dataTables_wrapper {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+section .frm-header {
+  margin-bottom: 10px;
+}
+section .frm-pharma {
+  background: #f5f5f5;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 10px #aaa;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+section .frm-pharma label {
+  font-family: 'titillium', sans-serif;
+}
+section .form-control,
+section .dataTables_wrapper .dataTables_filter input,
+section .dataTables_length select {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+section .form-control:focus,
+section .dataTables_wrapper .dataTables_filter input:focus,
+section .dataTables_length select:focus {
+  border-color: #2295a1;
+  color: #414848;
+  background: #dfe9ec;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+  -o-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+  -ms-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+}
+section .lbl-pharma {
+  color: #c7c7c7;
+  padding-top: 1.5em;
+  font-size: 1.2em;
+}
+section .table {
+  margin-top: 1.5em;
+}
+section .opciones_fin_venta {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+section .opciones_fin_venta .t_left {
+  text-align: left;
+}
+section .opciones_fin_venta .borde_ticket {
+  border: 2px solid #000;
+  padding-top: 10px;
+}
+section .opciones_fin_venta .borde_ticket #tblVentasTicket {
+  width: 100%;
+}
+section .opciones_fin_venta .borde_ticket #tblVentasTicket thead tr {
+  border-top: 6px double #424242;
+  border-bottom: 6px double #424242;
+}
+section .opciones_fin_venta .borde_ticket #tblVentasTicket thead tr th {
+  padding: 6px;
+  text-align: center;
+}
+section .opciones_fin_venta .borde_ticket #tblVentasTicket tbody {
+  text-align: center;
+}
+section .opciones_fin_venta .borde_ticket #tblVentasTicket tfoot tr th {
+  text-align: center;
+}
+section .opciones_fin_venta .borde_ticket #tblVentasTicket .margenDouble {
+  border-top: 6px double #424242;
+}
+section .table-hover tbody tr:hover {
+  background-color: #2295a1;
+  color: #fff;
+}
+section .tblReporte thead th {
+  padding: 10px 18px;
+  border-bottom: 1px solid #111;
+}
+section .tblReporte tfoot th {
+  border-top: 1px solid #111;
+}
+section .panel-success .panel-heading {
+  color: #fefefe;
+  background-color: #2295a1;
+  border-color: #2295a1;
+  font-weight: bold;
+  font-family: 'titillium', sans-serif;
+}
+section .panel-success .panel-heading label {
+  float: right;
+}
+.borde {
+  width: 100%;
+  height: 7px;
+  border-left: 20px solid #186b74;
+  border-right: 20px solid #33e0f2;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%, 20px;
+  -moz-background-size: 100%, 20px;
+  background-size: 100%, 20px;
+  background-image: -webkit-linear-gradient(left, #186b74 0%, #33e0f2 100%), -webkit-linear-gradient(left, #186b74 0%, #33e0f2 100%);
+  background-image: -moz-linear-gradient(left, #186b74 0%, #33e0f2 100%), -moz-linear-gradient(left, #186b74 0%, #33e0f2 100%);
+  background-image: -o-linear-gradient(left, #186b74 0%, #33e0f2 100%), -o-linear-gradient(left, #186b74 0%, #33e0f2 100%);
+  background-image: linear-gradient(to right, #186b74 0%, #33e0f2 100%), linear-gradient(to right, #186b74 0%, #33e0f2 100%);
+}
+.mensaje-error {
+  color: #d22;
+  font-size: 12px;
+  font-family: titillium;
+  font-weight: bold;
+}
+.mensaje-error_repeat {
+  font-size: 14px;
+}
+.icon-input-btn {
+  display: inline-block;
+  position: relative;
+}
+.icon-input-btn input[type="submit"] {
+  padding-left: 2.3em;
+}
+.icon-input-btn .glyphicon {
+  display: inline-block;
+  position: absolute;
+  left: 1em;
+  top: 40%;
+}
+@media (max-width: 767px) {
+  header {
+    margin-top: 1em;
+  }
+  header .logo {
+    margin-top: -25px;
+    position: absolute;
+    left: 10px;
+    top: 2px;
+  }
+  header .logo img {
+    height: 80px;
+    width: 80px;
+  }
+  header .navbar-default .navbar-nav .open .dropdown-menu li a {
+    color: #eee;
+  }
+  header .ubicacion {
+    margin-left: 0;
+  }
+}
